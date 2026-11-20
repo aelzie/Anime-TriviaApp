@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Quiz | Results</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="screen">
+        <div class="card results-card">
+            <p class="eyebrow">Game over</p>
+            <h1 id="result-message" class="title">Nice work!</h1>
+            <p class="final-score"><span id="final-score">0</span> <span class="unit">points</span></p>
+            <div class="result-stats">
+                <div><span id="correct-count" class="big">0/10</span><span class="label">correct</span></div>
+                <div><span id="accuracy" class="big">0%</span><span class="label">accuracy</span></div>
+            </div>
+
+            <form id="save-form" class="save-form">
+                <label for="username">Enter your name for the leaderboard</label>
+                <div class="save-row">
+                    <input type="text" id="username" name="username" maxlength="15" placeholder="Your name" autocomplete="nickname" required>
+                    <button type="submit" id="save-btn" class="btn btn-primary btn-small">Save</button>
+                </div>
+            </form>
+            <p id="save-note" class="note" hidden></p>
+
+            <div class="actions">
+                <a href="game.html" class="btn btn-primary">Play again</a>
+                <a href="leaderboard.html" class="btn btn-secondary">Leaderboard 👑</a>
+                <a href="index.html" class="btn btn-ghost">Home</a>
+            </div>
+        </div>
+    </main>
+    <script src="storage.js"></script>
+    <script src="end.js"></script>
+</body>
+</html>

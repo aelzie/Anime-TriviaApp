@@ -2,19 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime Quiz Home Page</title>
+    <title>Anime Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div id="home" class="homepage1">
-            <h1>Test Your Knowledge</h1>
-            <a href="game.html" id="ready-btn" class="btn">Play</a>
-            <a href="leaderboard.html" id="highscore-btn" class="btn">Leaderboard
-            <i class="fas fa-crown"></i></a>
+    <main class="screen">
+        <div class="card home-card">
+            <div class="logo-shapes" aria-hidden="true">
+                <svg viewBox="0 0 24 24" class="red"><path d="M12 3 22 21H2z"/></svg>
+                <svg viewBox="0 0 24 24" class="blue"><path d="M12 2 22 12 12 22 2 12z"/></svg>
+                <svg viewBox="0 0 24 24" class="yellow"><circle cx="12" cy="12" r="10"/></svg>
+                <svg viewBox="0 0 24 24" class="green"><rect x="3" y="3" width="18" height="18"/></svg>
+            </div>
+            <h1 class="title">Anime Quiz</h1>
+            <p class="subtitle">10 questions. 20 seconds each. Answer fast for more points!</p>
+            <a href="game.html" id="ready-btn" class="btn btn-primary">Play</a>
+            <a href="leaderboard.html" id="highscore-btn" class="btn btn-secondary">Leaderboard 👑</a>
+            <ul class="rules">
+                <li>Up to 1,000 points per question, the faster the better</li>
+                <li>Answer in a row for streak bonuses</li>
+                <li>Tip: press 1–4 on your keyboard to answer</li>
+            </ul>
         </div>
-    </div>
+    </main>
 </body>
 </html>
