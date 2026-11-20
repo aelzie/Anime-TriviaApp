@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Quiz | Leaderboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="screen">
+        <div class="card leaderboard-card">
+            <h1 class="title">Leaderboard 👑</h1>
+
+            <div id="podium" class="podium"></div>
+            <ol id="rest-list" class="rest-list"></ol>
+            <p id="empty" class="note" hidden>No scores yet. Play a game to claim first place!</p>
+
+            <div class="actions">
+                <a href="game.html" class="btn btn-primary">Play</a>
+                <a href="index.html" class="btn btn-ghost">Home</a>
+            </div>
+            <button id="clear-btn" class="link-btn" type="button">Clear leaderboard</button>
+        </div>
+    </main>
+    <script src="storage.js"></script>
+    <script src="leaderboard.js"></script>
+</body>
+</html>
